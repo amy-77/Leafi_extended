@@ -13,8 +13,8 @@ make
 
 
 # only loading results that firstly built，not rebuild index，not retrain filter
-# --load_index --load_filters --index_load_folderpath
- --filter_train_val_split 0.6   
+--load_index --load_filters --index_load_folderpath  
+--filter_train_val_split 0.6   
  The number of Calibration set for Conformal Prediction = filter_train_nexample*(1-filter_train_val_split)
  filter_conformal_is_smoothened: spline regression, countinuous method
   
