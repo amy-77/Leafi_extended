@@ -9,7 +9,7 @@ make \
 
 
 # Run
-##  Build index，train filter, using dump to store results
+## Step 1: Build index，train filter, using dump to store results
 ```c
 ./dstree \
   --db_filepath /data/qiyanlin/qitong/dataset/deep1b-96-1m.bin \
@@ -44,7 +44,7 @@ make \
   --index_dump_folderpath /data/qiyanlin/qitong/dstree/index_dump_1M
 ```
 
-## only loading results that firstly built，not rebuild index，not retrain filter 
+## Step2: only loading results that firstly built，not rebuild index，not retrain filter 
    --load_index --load_filters --index_load_folderpath  --filter_train_val_split 0.6  
     The number of Calibration set for Conformal Prediction = filter_train_nexample*(1-filter_train_val_split) 
     filter_conformal_is_smoothened: spline regression, countinuous method 
