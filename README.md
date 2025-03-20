@@ -10,7 +10,7 @@ make \
 
 # Run
 ##  Build index，train filter, using dump to store results
-'''
+```c
 ./dstree \
   --db_filepath /data/qiyanlin/qitong/dataset/deep1b-96-1m.bin \
   --query_filepath /data/qiyanlin/qitong/dataset/deep1b-96-10m-test-0.4-10k.bin \
@@ -42,12 +42,14 @@ make \
   --device_id 0 \
   --dump_index \
   --index_dump_folderpath /data/qiyanlin/qitong/dstree/index_dump_1M
-'''
+```
 
-## only loading results that firstly built，not rebuild index，not retrain filter
-### --load_index --load_filters --index_load_folderpath  --filter_train_val_split 0.6   
-### The number of Calibration set for Conformal Prediction = filter_train_nexample*(1-filter_train_val_split) ### filter_conformal_is_smoothened: spline regression, countinuous method
-'''  
+## only loading results that firstly built，not rebuild index，not retrain filter 
+   --load_index --load_filters --index_load_folderpath  --filter_train_val_split 0.6  
+### The number of Calibration set for Conformal Prediction = filter_train_nexample*(1-filter_train_val_split) 
+
+### filter_conformal_is_smoothened: spline regression, countinuous method 
+```c 
 ./dstree \
   --db_filepath /data/qiyanlin/qitong/dataset/deep1b-96-1m.bin \
   --query_filepath /data/qiyanlin/qitong/dataset/deep1b-96-10m-test-0.4-2.bin \
@@ -81,3 +83,4 @@ make \
   --load_filters \
   --index_load_folderpath /data/qiyanlin/qitong/dstree/index_dump_1M \
   --filter_conformal_is_smoothened
+```
