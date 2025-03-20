@@ -1,5 +1,5 @@
 # Leafi_extended
-An extended work of Leafi (index: dstree, ML models: CNN, MLP) \
+An extended work of Leafi (index: dstree, ML models: CNN, MLP) 
 
 # Compile
 mkdir build  \
