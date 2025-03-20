@@ -1,6 +1,7 @@
 # Leafi_extended
-An extended work of Leafi
-# 编译
+An extended work of Leafi (index: dstree, ML models: CNN, MLP)
+
+# Compile
 mkdir build
 rm -rf *
 cmake ..
